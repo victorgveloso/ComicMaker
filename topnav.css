@@ -1,0 +1,57 @@
+.topnav {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: -100px;
+    right: 0;
+    background-color: rgb(222, 222, 222);
+    border-bottom: 6px solid rgb(191, 191, 191);
+    border-radius: 100px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 95px;
+}
+
+.topnav a {
+    padding: 8px 8px 8px 132px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #bd1f1f;
+    display: inline;
+    transition: 0.5s;
+}
+#TopperNav{
+  font-size:20px;
+  cursor:pointer;
+  z-index: 1;
+  padding: 8px 8px 8px 8px;
+  position: fixed;
+  background-color: rgb(191, 191, 191);
+  border-radius: 30px;
+  top: -106px;
+  padding-top: 100px;
+  left: 75px;
+  transition: 0.5s;
+}
+
+.topnav a:hover {
+    color: #ff0000;
+}
+
+.topnav a:active {
+    color: #b5ff00;
+}
+
+.topnav a::selection {
+    color: #bd1f1f;
+}
+
+#main {
+    transition: margin-top .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .topnav {padding-top: 15px;}
+  .topnav a {font-size: 18px;}
+}
