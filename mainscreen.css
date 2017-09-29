@@ -2,13 +2,15 @@ html, body {
   background-color: rgb(237, 237, 237);
   font-family: "Lato", sans-serif;
   height: 99%;
-  width: 99%;
+  width: 98%;
+  overflow: hidden;
 }
 
 #master {
   position: relative;
-  height: 100%;
-  width: 100%;
+  margin-top: 90px;
+  height: calc(100% - 95px);
+  width: calc(100% - 295px);
 }
 
 #main {
