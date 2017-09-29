@@ -4,7 +4,7 @@
     width: 0;
     position: fixed;
     z-index: 2;
-    top: 0;
+    top: 50px;
     right: -100px;
     background-color: rgb(222, 222, 222);
     border-left: 6px solid rgb(191, 191, 191);
@@ -33,7 +33,7 @@
   border-radius: 30px;
   right: -66px;
   padding-top: 100px;
-  top: 70px;
+  top: 120px;
   transition: 0.5s;
 
 
