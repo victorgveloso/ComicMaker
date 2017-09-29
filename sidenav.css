@@ -54,12 +54,8 @@
 .sidenav a::selection {
     color: #bd1f1f;
 }
-
+/*
 #main {
     transition: margin-right .5s;
 }
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+*/
