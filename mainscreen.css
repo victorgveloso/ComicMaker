@@ -1,8 +1,10 @@
 body {
-    background-color: rgb(237, 237, 237);
-    font-family: "Lato", sans-serif;
+  background-color: rgb(237, 237, 237);
+  font-family: "Lato", sans-serif;
 }
+
 #main {
-    margin-top: 50px;
-    padding: 16px;
+  margin-top: 50px;
+  margin-right: 270px;
+  padding: 16px;
 }

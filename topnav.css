@@ -21,7 +21,7 @@
     display: inline;
     transition: 0.5s;
 }
-#TopperNav{
+#openTopNav{
   font-size:20px;
   cursor:pointer;
   z-index: 1;
