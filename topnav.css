@@ -14,9 +14,11 @@
 }
 
 .topnav a {
-    padding: 0 5% 0 5%;
+    padding-left: 5%;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
+    top: 8px;
+    position: relative;
     color: #bd1f1f;
     display: inline;
     transition: 0.5s;
@@ -50,11 +52,13 @@
 #main {
     transition: margin-top .5s;
 }
-*/
 
 @media screen and (max-width: 600px) {
-  .topnav a {padding: 0 0 0 5%; }
+  .topnav a {padding: 0 0 0 3%; }
 }
-@media screen and (max-width: 450px) {
-  .topnav a {padding: 0 0 0 0; }
+*/
+@media screen and (max-width: 400px) {
+  .topnav a {padding: 0 0 0 2%; }
+  .topnav {border-radius: 0;}
+  #openTopNav {left: 5px;}
 }
