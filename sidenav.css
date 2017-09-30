@@ -15,7 +15,7 @@
     padding-right: 100px;
 }
 
-.sidenav a {
+.sideoption {
     padding: 8px 32px 8px 8px;
     text-decoration: none;
     font-size: 25px;
@@ -43,15 +43,15 @@
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.sidenav a:hover {
+.sideoption:hover {
     color: #ff0000;
 }
 
-.sidenav a:active {
+.sideoption:active {
     color: #b5ff00;
 }
 
-.sidenav a::selection {
+.sideoption::selection {
     color: #bd1f1f;
 }
 /*

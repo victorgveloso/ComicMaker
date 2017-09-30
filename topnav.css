@@ -13,7 +13,7 @@
     padding-top: 95px;
 }
 
-.topnav a {
+.topoption {
     padding-left: 5%;
     text-decoration: none;
     font-size: 30px;
@@ -37,15 +37,15 @@
   transition: 0.5s;
 }
 
-.topnav a:hover {
+.topoption:hover {
     color: #ff0000;
 }
 
-.topnav a:active {
+.topoption:active {
     color: #b5ff00;
 }
 
-.topnav a::selection {
+.topoption::selection {
     color: #bd1f1f;
 }
 /*
@@ -58,7 +58,7 @@
 }
 */
 @media screen and (max-width: 400px) {
-  .topnav a {padding: 0 0 0 2%; }
+  .topoption {padding: 0 0 0 2%; }
   .topnav {border-radius: 0;}
   #openTopNav {left: 5px;}
 }
