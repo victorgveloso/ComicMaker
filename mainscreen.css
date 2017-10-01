@@ -21,19 +21,19 @@ html, body {
   transition: .5s;
 }
 
-#main h2 {
+#main > h2 {
   margin-top: 0;
   margin-right: 0;
   position: absolute;
 }
 
-#main img {
+#main > img {
   margin-top: 0;
   margin-right: 0;
   position: absolute;
 }
 
-#main p {
+#main > p {
   margin-top: 0;
   margin-right: 0;
   position: absolute;
