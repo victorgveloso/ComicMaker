@@ -11,6 +11,8 @@
   <script src="topnav.js"></script>
   <link rel="stylesheet" type="text/css" href="mainscreen.css" />
   <script src="mainscreen.js"></script>
+  <link rel="stylesheet" type="text/css" href="floatingwindow.css" />
+  <script src="floatingwindow.js"></script>
   <meta charset="utf-8" />
 
 
@@ -20,7 +22,7 @@
 <body>
   <!-- Começa Barra Lateral -->
   <div id="mySidenav" class="sidenav">
-    <div class="trasharea"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+    <div class="trasharea"><span class="fa fa-trash-o" aria-hidden="true" /></div>
     <div class="twooptions">
       <a class="sideoption" href="#"><img alt="crash" class="optionimage" src="http://3.bp.blogspot.com/-jLbSyOZtDXA/VhvefUBArvI/AAAAAAAASpo/DU6OBYVMUbQ/s1600/5be6e261eef64bb9951e5d005fc12221_p_400.png"></a>
       <a class="sideoption" href="#"><img alt="crash" class="optionimage" src="http://3.bp.blogspot.com/-jLbSyOZtDXA/VhvefUBArvI/AAAAAAAASpo/DU6OBYVMUbQ/s1600/5be6e261eef64bb9951e5d005fc12221_p_400.png"></a>
@@ -167,22 +169,60 @@
 
   <!-- Começa Barra Superior -->
   <div id="myTopnav" class="topnav">
-    <a title="Novo gibi" class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
-    <a title="Nova página" class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
-    <a title="Novo texto" class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
-    <a title="Salvar" class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
-    <a title="Carregar" class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
-    <a title="Ferramenta de navegação" class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
-    <a title="Ferramenta de seleção" class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
-    <a title="Particionar página" class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
+    <a title="Novo gibi" class="topoption" href="#"><span class="fa fa-floppy-o" aria-hidden="true"></span></a>
+    <a title="Nova página" class="topoption" href="#"><span class="fa fa-floppy-o" aria-hidden="true"></span></a>
+    <a title="Novo texto" class="topoption" href="#"><span class="fa fa-floppy-o" aria-hidden="true"></span></a>
+    <a title="Salvar" class="topoption" href="#"><span class="fa fa-floppy-o" aria-hidden="true"></span></a>
+    <a title="Carregar" class="topoption" href="#"><span class="fa fa-floppy-o" aria-hidden="true"></span></a>
+    <a title="Ferramenta de navegação" class="topoption" href="#"><span class="fa fa-floppy-o" aria-hidden="true"></span></a>
+    <a title="Ferramenta de seleção" class="topoption" href="#"><span class="fa fa-floppy-o" aria-hidden="true"></span></a>
+    <a title="Particionar página" class="topoption" href="#"><span class="fa fa-floppy-o" aria-hidden="true"></span></a>
   </div>
   <span id="openTopNav" onclick="openTopNav()">&#9776; Esconder</span>
   <!-- Termina Barra Superior -->
   <!-- Começa Barra de Cursores -->
-  <a title="Página anterior" id="cursorleft" class="cursoroption" href="#"><i class="fa fa fa-hand-o-left" aria-hidden="true"></i></a>
-  <a title="Próxima página" id="cursorright" class="cursoroption" href="#"><i class="fa fa fa-hand-o-right" aria-hidden="true"></i></a>
+  <a title="Página anterior" id="cursorleft" class="cursoroption" href="#"><span class="fa fa fa-hand-o-left" aria-hidden="true"></span></a>
+  <a title="Próxima página" id="cursorright" class="cursoroption" href="#"><span class="fa fa fa-hand-o-right" aria-hidden="true"></span></a>
   <!-- Termina Barra de Cursores -->
 
+  <!-- Começa janela flutuante -->
+  <div id="separadorDeQuadros" class="floatingBoxShadow">
+  </div>
+  <div class="floatingBox">
+      <div class="boxHeader">
+        <a title="Adicionar divisão horizontal" class="topoption" href="#"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
+        <a title="Adicionar divisão vertical" class="topoption" href="#"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
+        <a title="Adicionar divisão em caixa" class="topoption" href="#"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
+        <a title="Adicionar divisão diagonal 1" class="topoption" href="#"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
+        <a title="Adicionar divisão diagonal 2" class="topoption" href="#"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
+      </div>
+      <div class="boxBody">
+        <div id="board-minimal">
+          <div class="bloco boarditem" style="height:40mm;width:40mm;left: 10%;top: 10%;"></div>
+          <img class="boarditem" style="width:40%;left: 70%;top: 10%;" alt="seila" src="https://i.pinimg.com/originals/10/65/c5/1065c58f8e1953458135236fb1338c92.jpg">
+          <img class="boarditem" style="width:50%;left: 45%;top: 55%;" alt="seila" src="https://i.pinimg.com/originals/10/65/c5/1065c58f8e1953458135236fb1338c92.jpg">
+          <img class="boarditem" style="width:70%;left: 10%;top: 90%;" alt="seila" src="https://i.pinimg.com/originals/10/65/c5/1065c58f8e1953458135236fb1338c92.jpg">
+        </div>
+      </div>
+  </div>
+  <!-- Termina janela flutuante -->
+
+  <!-- Começa janela flutuante -->
+  <div id="criadorDeFalas" class="floatingBoxShadow" style="display:none">
+  </div>
+  <div class="floatingBox" style="display:none">
+      <div class="boxHeader">
+        <a title="negrito" class="topoption" href="#"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
+        <a title="italico" class="topoption" href="#"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
+        <a title="pequeno" class="topoption" href="#"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
+        <a title="medio" class="topoption" href="#"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
+        <a title="grande" class="topoption" href="#"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
+      </div>
+      <div class="boxBody">
+        <textarea spellcheck="true" style="left:0.25%;width:99%;height:79%;top:0;position:absolute;" name="texto" rows="8" cols="10"></textarea>
+      </div>
+  </div>
+  <!-- Termina janela flutuante -->
   <div id="master">
     <div id="main">
       <div id="board">

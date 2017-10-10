@@ -60,7 +60,7 @@
   height: 60px;
   background-color: rgba(255, 14, 0, 0.2);
 }
-.trasharea > i{
+.trasharea > span{
   position: relative;
   font-size: 25px;
   color: rgb(255, 0, 0);

@@ -1,0 +1,53 @@
+.floatingBox{
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  overflow: hidden;
+  left: 10%;
+  background-color: rgb(222, 222, 222);
+  opacity: 1;
+  z-index: 9999;
+  border: 6px solid rgb(191, 191, 191);
+  border-radius: 10px;
+}
+.floatingBoxShadow{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0.5;
+  background-color: black;
+}
+#board-minimal{
+  border: 3px solid rgb(15, 15, 15);
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.boxBody{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: -100px;
+
+}
+.boxHeader{
+  height: 50px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  top: -100px;
+  right: 0;
+  background-color: rgb(222, 222, 222);
+  border-bottom: 4px solid rgb(191, 191, 191);
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 95px;
+  text-align: center;
+}
