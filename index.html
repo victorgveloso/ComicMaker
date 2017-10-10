@@ -3,6 +3,8 @@
 
 <head>
   <script src="https://use.fontawesome.com/7e60106be3.js"></script>
+  <link rel="stylesheet" type="text/css" href="cursornav.css" />
+  <script src="cursornav.js"></script>
   <link rel="stylesheet" type="text/css" href="sidenav.css" />
   <script src="sidenav.js"></script>
   <link rel="stylesheet" type="text/css" href="topnav.css" />
@@ -155,7 +157,7 @@
       <a class="sideoption" href="#"><img alt="crash" class="optionimage" src="http://3.bp.blogspot.com/-jLbSyOZtDXA/VhvefUBArvI/AAAAAAAASpo/DU6OBYVMUbQ/s1600/5be6e261eef64bb9951e5d005fc12221_p_400.png"></a>
       <a class="sideoption" href="#"><img alt="crash" class="optionimage" src="http://3.bp.blogspot.com/-jLbSyOZtDXA/VhvefUBArvI/AAAAAAAASpo/DU6OBYVMUbQ/s1600/5be6e261eef64bb9951e5d005fc12221_p_400.png"></a>
     </div>
-
+    <div class="bottomoffset"></div>
   </div>
   <span class="openSideNav" id="openSideNavTodos" onclick="openSideNav(0)">&#9776; Todos</span>
   <span class="openSideNav" id="openSideNavOnomatopeias" onclick="openSideNav(1)">&#9776; Onomatopéias</span>
@@ -165,21 +167,30 @@
 
   <!-- Começa Barra Superior -->
   <div id="myTopnav" class="topnav">
-    <a class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
-    <a class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
-    <a class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
-    <a class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
-    <a class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
-    <a class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
-    <a class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
-    <a class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
+    <a title="Novo gibi" class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
+    <a title="Nova página" class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
+    <a title="Novo texto" class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
+    <a title="Salvar" class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
+    <a title="Carregar" class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
+    <a title="Ferramenta de navegação" class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
+    <a title="Ferramenta de seleção" class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
+    <a title="Particionar página" class="topoption" href="#"><i class="fa fa-floppy-o" aria-hidden="true"></i></a>
   </div>
   <span id="openTopNav" onclick="openTopNav()">&#9776; Esconder</span>
   <!-- Termina Barra Superior -->
+  <!-- Começa Barra de Cursores -->
+  <a title="Página anterior" id="cursorleft" class="cursoroption" href="#"><i class="fa fa fa-hand-o-left" aria-hidden="true"></i></a>
+  <a title="Próxima página" id="cursorright" class="cursoroption" href="#"><i class="fa fa fa-hand-o-right" aria-hidden="true"></i></a>
+  <!-- Termina Barra de Cursores -->
 
   <div id="master">
     <div id="main">
-      <img alt="seila" src="https://i.pinimg.com/originals/10/65/c5/1065c58f8e1953458135236fb1338c92.jpg">
+      <div id="board">
+        <div class="bloco boarditem" style="height:40mm;width:40mm;left: 10%;top: 10%;"></div>
+        <img class="boarditem" style="width:40%;left: 70%;top: 10%;" alt="seila" src="https://i.pinimg.com/originals/10/65/c5/1065c58f8e1953458135236fb1338c92.jpg">
+        <img class="boarditem" style="width:50%;left: 45%;top: 55%;" alt="seila" src="https://i.pinimg.com/originals/10/65/c5/1065c58f8e1953458135236fb1338c92.jpg">
+        <img class="boarditem" style="width:70%;left: 10%;top: 90%;" alt="seila" src="https://i.pinimg.com/originals/10/65/c5/1065c58f8e1953458135236fb1338c92.jpg">
+      </div>
     </div>
   </div>
 

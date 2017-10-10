@@ -2,9 +2,9 @@ var toggledSidenav = 0;
 
 function openSideNav(i) {
   if (toggledSidenav == 0) {
-    //document.getElementById("master").style.marginRight = "40px";
     if (window.matchMedia('(max-width: 600px)').matches) {
       document.getElementById("mySidenav").style.width = "125px";
+      document.getElementById('cursorright').style.right = "100px";
       switch (i) {
         case 0:
           document.getElementById("openSideNavTodos").style.right = "49px";
@@ -23,6 +23,7 @@ function openSideNav(i) {
       }
     } else {
       document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById('cursorright').style.right = "225px";
       switch (i) {
         case 0:
           document.getElementById("openSideNavTodos").style.right = "184px";
@@ -43,7 +44,7 @@ function openSideNav(i) {
 
   } else {
     document.getElementById("mySidenav").style.width = ""; //"250px";
-    //document.getElementById("master").style.marginRight = "290px";
+    document.getElementById('cursorright').style.right = "";
     document.getElementById("openSideNavTodos").style.right = ""; //"184px";
     document.getElementById("openSideNavObjetos").style.right = "";
     document.getElementById("openSideNavOnomatopeias").style.right = "";

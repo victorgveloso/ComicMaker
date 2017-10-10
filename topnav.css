@@ -33,7 +33,7 @@
   position: fixed;
   background-color: rgb(191, 191, 191);
   border-radius: 30px;
-  top: -56px;
+  top: -50px;
   padding-top: 100px;
   left: 75px;
   transition: 0.5s;
@@ -50,15 +50,6 @@
 .topoption::selection {
     color: #bd1f1f;
 }
-/*
-#main {
-    transition: margin-top .5s;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a {padding: 0 0 0 3%; }
-}
-*/
 @media screen and (max-width: 400px) {
   .topoption {padding: 0 0 0 2%; }
   .topnav {border-radius: 0;}

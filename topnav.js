@@ -8,7 +8,7 @@ function openTopNav() {
     document.getElementById("openSideNavOnomatopeias").style.top = "200px";
     document.getElementById("openSideNavObjetos").style.top = "340px";
     document.getElementById("openSideNavBaloes").style.top = "445px";
-    document.getElementById("openTopNav").style.top = "-106px";
+    document.getElementById("openTopNav").style.top = "-100px";
   } else {
     document.getElementById("myTopnav").style.height = "";
     //document.getElementById("main").style.marginTop = "90px";
