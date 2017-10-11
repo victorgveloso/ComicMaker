@@ -183,19 +183,19 @@ function listaTodos() {
     adicionaItem(todos[todos.length-1],todos[todos.length-1]);
   }
   */
-  for (var i = 0; i < baloes.length; i += 2) {
+  for (var i = 0; i < baloes.length-1; i += 2) {
     adicionaItem("img/baloes/" + baloes[i],"img/baloes/" + baloes[i+1]);
   }
   if (baloes.length % 2 != 0) {
     adicionaItem("img/baloes/" + baloes[baloes.length-1],"img/baloes/" + baloes[baloes.length-1]);
   }
-  for (var i = 0; i < objetos.length; i += 2) {
+  for (var i = 0; i < objetos.length-1; i += 2) {
     adicionaItem("img/objetos/" + objetos[i],"img/objetos/" + objetos[i+1]);
   }
   if (objetos.length % 2 != 0) {
     adicionaItem("img/objetos/" + objetos[objetos.length-1],"img/objetos/" + objetos[objetos.length-1]);
   }
-  for (var i = 0; i < onomatopeias.length; i += 2) {
+  for (var i = 0; i < onomatopeias.length-1; i += 2) {
     adicionaItem("img/onomatopeias/" + onomatopeias[i],"img/onomatopeias/" + onomatopeias[i+1]);
   }
   if (onomatopeias.length % 2 != 0) {
