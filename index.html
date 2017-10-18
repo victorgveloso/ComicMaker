@@ -52,9 +52,9 @@
   <a title="Página anterior" id="cursorleft" class="cursoroption" href="#" ><span class="fa fa-hand-o-left" aria-hidden="true"></span></a>
   <a title="Próxima página" id="cursorright" class="cursoroption" href="#" ><span class="fa fa-hand-o-right" aria-hidden="true"></span></a>
   <!-- Termina Barra de Cursores -->
-  <div class="floatingBoxShadow" style="display:none">
+  <div id="separadorDeQuadrosFloatingBoxShadow" class="floatingBoxShadow" onclick="escondeSeparador()">
   </div>
-  <div id="separadorDeQuadros" class="floatingBox" style="display:none" >
+  <div id="separadorDeQuadros" class="floatingBox" >
       <div class="boxHeader">
         <a title="Adicionar divisão horizontal" class="topoption" href="#"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
         <a title="Adicionar divisão vertical" class="topoption" href="#"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
@@ -91,7 +91,7 @@
   <!-- Termina janela flutuante -->
   <div id="master">
     <div id="main">
-      <div id="board">
+      <div id="board" ondragover="permite(ev)" ondrop="solta(ev)">
         <div class="bloco boarditem" style="height:40mm;width:40mm;left: 10%;top: 10%;"></div>
         <img class="boarditem" style="width:40%;left: 70%;top: 10%;" alt="seila" src="https://i.pinimg.com/originals/10/65/c5/1065c58f8e1953458135236fb1338c92.jpg">
         <img class="boarditem" style="width:50%;left: 45%;top: 55%;" alt="seila" src="https://i.pinimg.com/originals/10/65/c5/1065c58f8e1953458135236fb1338c92.jpg">

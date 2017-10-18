@@ -202,6 +202,9 @@ function listaTodos() {
     adicionaItem("img/onomatopeias/" + onomatopeias[onomatopeias.length-1],"img/onomatopeias/" + onomatopeias[onomatopeias.length-1]);
   }
 }
+function carrega(ev) {
+  console.log("oi");
+}
 function adicionaItem(src0,src1) {
   var bandeja = document.getElementById("mySidenav");
   var item = document.createElement("DIV");
@@ -220,6 +223,10 @@ function adicionaItem(src0,src1) {
   imagens[1].alt = "crash";
   imagens[0].className = "optionimage";
   imagens[1].className = "optionimage";
+  imagens[0].setAttribute("draggable","true");
+  imagens[1].setAttribute("draggable","true");
+  imagens[0].addEventListener("drag",carrega);
+  imagens[1].addEventListener("drag",carrega);
   imagens[0].src = src0;
   imagens[1].src = src1;
   option[0].appendChild(imagens[0]);
