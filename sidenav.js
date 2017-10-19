@@ -204,6 +204,7 @@ function listaTodos() {
 }
 function carrega(event) {
   event.dataTransfer.setData("text", event.target.getAttribute("src"));
+  event.dataTransfer.setData("id", false);
 }
 function adicionaItem(src0,src1) {
   var bandeja = document.getElementById("mySidenav");
