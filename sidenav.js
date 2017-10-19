@@ -202,8 +202,8 @@ function listaTodos() {
     adicionaItem("img/onomatopeias/" + onomatopeias[onomatopeias.length-1],"img/onomatopeias/" + onomatopeias[onomatopeias.length-1]);
   }
 }
-function carrega(ev) {
-  console.log("oi");
+function carrega(event) {
+  event.dataTransfer.setData("text", event.target.getAttribute("src"));
 }
 function adicionaItem(src0,src1) {
   var bandeja = document.getElementById("mySidenav");
@@ -225,10 +225,17 @@ function adicionaItem(src0,src1) {
   imagens[1].className = "optionimage";
   imagens[0].setAttribute("draggable","true");
   imagens[1].setAttribute("draggable","true");
-  imagens[0].addEventListener("drag",carrega);
-  imagens[1].addEventListener("drag",carrega);
+  imagens[0].addEventListener("dragstart",function(event){carrega(event)});
+  imagens[1].addEventListener("dragstart",function(event){carrega(event)});
   imagens[0].src = src0;
   imagens[1].src = src1;
+  title = [];
+  title[0] = src0.split("/");
+  title[0] = title[0][title[0].length - 1].split(".")[0];
+  title[1] = src1.split("/");
+  title[0] = title[1][title[1].length - 1].split(".")[0];
+  imagens[0].setAttribute("title",title[0]);
+  imagens[1].setAttribute("title",title[1]);
   option[0].appendChild(imagens[0]);
   option[1].appendChild(imagens[1]);
   item.appendChild(option[0]);
