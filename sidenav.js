@@ -243,3 +243,9 @@ function adicionaItem(src0,src1) {
   item.appendChild(imagens[1]);
   bandeja.insertBefore(item,document.getElementById("bottomoffset"));
 }
+
+function resizeAumenta(nome){
+  nome=document.getElementById('IMG');
+  IMG.width = IMG.width-90;
+  IMG.height = IMG. height-90;
+}

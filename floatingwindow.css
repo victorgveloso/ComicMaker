@@ -11,6 +11,12 @@
   border: 6px solid rgb(191, 191, 191);
   border-radius: 10px;
 }
+#pequeno{
+  font-size: 20px;
+}
+#grande{
+  font-size: 40px;
+}
 .floatingBoxShadow{
   position: fixed;
   width: 100%;
