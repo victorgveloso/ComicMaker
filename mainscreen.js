@@ -4,7 +4,6 @@ function permite(event) {
 }
 function joga(event) {
 
-  alert(event.dataTransfer.getData("text") + " " + event.dataTransfer.getData("id") );
   if(event.dataTransfer.getData("id") == "true"){
     remove(event.dataTransfer.getData("text"));
   }
@@ -20,7 +19,6 @@ function remove(src){
   document.getElementById('board').removeChild(document.getElementById(src));
 }
 function adiciona(src,pos,mover) {
-  alert(src + " " + mover);
   var imagem;
   if(mover == "true"){
     imagem = document.getElementById(src);
