@@ -39,12 +39,12 @@
   <div id="myTopnav" class="topnav">
     <a title="Novo gibi" class="topoption" href="#"><span class="fa fa-book" aria-hidden="true"></span></a>
     <a title="Nova página" class="topoption" href="#"><span class="fa fa-files-o" aria-hidden="true"></span></a>
-    <a title="Novo texto" class="topoption" href="#"><span class="fa fa-font" aria-hidden="true"></span></a>
+    <a title="Novo texto" class="topoption" href="#" onclick="texto()"><span class="fa fa-font" aria-hidden="true"></span></a>
     <a title="Salvar" class="topoption" href="#"><span class="fa fa-floppy-o" aria-hidden="true"></span></a>
     <a title="Carregar" class="topoption" href="#"><span class="fa fa-upload" aria-hidden="true"></span></a>
     <a title="Ferramenta de navegação" class="topoption" href="#"><span class="fa fa-mouse-pointer" aria-hidden="true"></span></a>
     <a title="Ferramenta de seleção" class="topoption" href="#"><span class="fa fa-hand-rock-o" aria-hidden="true"></span></a>
-    <a title="Particionar página" class="topoption" href="#"><span class="fa fa-table" aria-hidden="true"></span></a>
+    <a title="Particionar página" class="topoption" href="#" onclick="mostraSeparador()"><span class="fa fa-table" aria-hidden="true"></span></a>
   </div>
   <span id="openTopNav" onclick="openTopNav()">&#9776; Esconder</span>
   <!-- Termina Barra Superior -->
@@ -73,18 +73,18 @@
   <!-- Termina janela flutuante -->
 
   <!-- Começa janela flutuante -->
-  <div class="floatingBoxShadow" style="display:none" >
+  <div id="criadorfloatingBoxShadow"  class="floatingBoxShadow" onclick="escondeTexto()">
   </div>
-  <div id="criadorDeFalas" class="floatingBox" style="display:none">
+  <div id="criadorDeFalas" class="floatingBox">
       <div class="boxHeader">
-        <a title="negrito" class="topoption" href="#"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
+        <a title="negrito" class="topoption" href="#" onclick="escondeTexto()"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
         <a title="italico" class="topoption" href="#"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
         <a title="pequeno" class="topoption" href="#"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
         <a title="medio" class="topoption" href="#"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
         <a title="grande" class="topoption" href="#"><span class="fa fa-trash-o" aria-hidden="true"></span></a>
       </div>
       <div class="boxBody">
-        <textarea spellcheck="true" style="left:0.25%;width:99%;height:79%;top:0;position:absolute;" name="texto" rows="8" cols="10"></textarea>
+        <textarea spellcheck="true" style="left:0.25%;width:99%;height:79%;top:0;position:absolute;" name="texto" rows="8" cols="10">abc</textarea>
       </div>
   </div>
   <!-- Termina janela flutuante -->
